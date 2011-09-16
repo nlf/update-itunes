@@ -1,0 +1,14 @@
+ This script will update the iTunes library in the following ways:
+   Remove files that are in the library and iTunes has flagged as missing
+   Remove files that are in the library and the files are physically missing
+   Add files to the library in the specified path, if they aren't already in the library
+
+ To install:
+   sudo easy_install pip
+   sudo pip install appscript
+
+ To use:
+   python update_itunes.py -d /Users/yourusername/yourmusicfolder (a -v is optional and will display more detail)
+
+ This can be added to cron or whatever task scheduler you like to keep your library up to date automatically
+
