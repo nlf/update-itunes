@@ -25,7 +25,7 @@ if args.dir:
             continue
         cur_songs.append(song.location.get().path)
         
-    for root, subfolders, files in os.walk(args.dir):
+    for root, subfolders, files in os.walk(u'%s' % args.dir):
         for filename in files:
             if os.path.splitext(filename)[1].lower() == '.mp3':
                 full_path = os.path.join(root, filename)
